@@ -1,3 +1,115 @@
-nav {
+body > header {
+  display: block;
+  position: fixed;
+  background-color: yellow;
+  height: 75px;
+  width: 100%;
+  top: 0px;
+}
+
+main {
+  margin-top: 100px;
+}
+header h2, .footer h2 {
+  float: left;
+  /*display: inline;*/
+  /*clear: both;*/
+}
+
+header h2 {
+  padding-left: 20px;
+}
+
+header h2 a, nav ul li a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: inline-block;
   float: right;
+  clear: both;
+  list-style: none;
+  top: 0px;
+}
+
+
+header > nav > ul {
+  position: absolute;
+  right: 0px;
+}
+
+header h2 {
+  text-align: center;
+}
+
+main > section:first-child > h1 {
+  text-align: center;
+  padding: 50px;
+  background-color: blue;
+  margin-top: -25px;
+}
+
+.posts > h2, .posts h3, .posts article p:last-of-type {
+  text-align: center;
+}
+
+main section:first-child > h1 {
+  clear: both;
+}
+main > section > article {
+  width: 25%;
+  float: left;
+  margin: 10px;
+  padding: 0px 10px;
+  border: black 2px solid;
+  border-radius: 10px;
+}
+
+
+.posts article p:first-of-type {
+  text-align: justify;
+  border-top: black 2px solid;
+  padding-top: 10px;
+}
+
+.posts article p:last-of-type a {
+  text-decoration: none;
+  border: black 2px solid;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+
+.join-club {
+  clear: both;
+  display: block;
+}
+
+.join-text {
+  float: left;
+  text-align: justify;
+  width: 35%;
+}
+
+.join-text h2 {
+  text-align: center;
+}
+
+img.join-club-pic {
+  width: 35%;
+  float: right;
+}
+
+.everybody-cat {
+  clear: both;
+  text-align: center;
+  width: 100%;
+}
+
+.everybody-cat h2 {
+  background-image: url(/assets/everybody.jpg);
+}
+
+.disclaimer-section {
+  display: inline-block;
 }
