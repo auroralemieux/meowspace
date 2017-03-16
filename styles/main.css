@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+h1, .everybody-cat > h2 {
+  font-family: "Josefin Sans";
+}
+
+p, a, h3 {
+  font-family: helvetica, sans-serif;
+}
+
 body > header {
   display: block;
   position: fixed;
@@ -34,6 +44,8 @@ nav ul {
   margin-right: 30px;
   vertical-align: middle;
   margin-top: 25px;
+  position: absolute;
+  right: 0px;
 }
 
 .header ul li {
@@ -43,11 +55,6 @@ nav ul {
 
 .header ul {
   list-style: none;
-}
-
-.header > ul {
-  position: absolute;
-  right: 0px;
 }
 
 header h2 {
@@ -107,17 +114,23 @@ main section:first-child > h1 {
   padding: 10px;
   border: black 2px solid;
   border-top-width: 1px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   margin-top: -20px;
 
 }
 
-.posts article p:last-of-type a {
+a[href*="#post"] {
   text-decoration: none;
   border: black 2px solid;
+  color: green;
   border-radius: 10px;
   padding: 5px 20px;
-  margin: 0 0 -40px 0;
+  margin-bottom: -30px;
+}
+
+article p:last-of-type {
+  position: relative;
+  top: 0px;
 }
 
 .join-club {
