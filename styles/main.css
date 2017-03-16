@@ -121,17 +121,25 @@ main section:first-child > h1 {
 }
 
 .join-club {
+  height: 120%;
   clear: both;
   background-color: green;
-  height: 220px;
+  /*min-height: 230px;*/
 }
 
 .join-text {
   display: block;
+  right: 0;
   float: left;
   text-align: justify;
   width: 45%;
-  padding: 0 10px 0 30px ;
+  padding: 0 20px 0px 30px;
+  font-size: .95em;
+  }
+
+.join-text p {
+  position: absolute;
+  width: 45%;
 }
 
 .join-text h2 {
@@ -139,10 +147,11 @@ main section:first-child > h1 {
 }
 
 img#join-club-pic {
-  height: 190px;
-  /*float: right;*/
+  height: 180px;
   margin: 20px;
+  padding-top: 20px;
   display: block;
+  /*vertical-align: middle;*/
 }
 
 .everybody-cat {
@@ -171,7 +180,7 @@ img#join-club-pic {
   text-align: justify;
   position: absolute;
   padding: 20px 0;
-  font-size: .75em;
+  font-size: .5em;
 }
 
 .disclaimer-section h4, .disclaimer-section p {
@@ -181,6 +190,10 @@ img#join-club-pic {
 .footer ul {
   float: right;
   padding-right: 35%;
+}
+
+.footer li, .footer a {
+  color: green;
 }
 
 footer {
