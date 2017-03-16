@@ -75,12 +75,20 @@ header h2 {
   font-size: 3em;
 }
 
-.posts {
-  /*margin: 0 auto;*/
-  display: block;
+
+main section:first-child > h1 {
+  clear: both;
 }
 
-.posts > h2, .posts h3, .posts article p:last-of-type {
+.posts {
+  display: block;
+  padding-left: 10%;
+  /*display: table;*/
+}
+main > h2 {
+  text-align: center;
+}
+.posts h3, .posts article p:last-of-type {
   text-align: center;
 }
 
@@ -88,7 +96,6 @@ header h2 {
   min-height: 2em;
   height: auto;
   text-align: middle;
-  border: black 2px solid;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 10px 0;
@@ -97,24 +104,23 @@ header h2 {
 .posts:first-child {
   margin: 0;
 }
-main section:first-child > h1 {
-  clear: both;
-}
 
 .posts > article {
+  /*display: table-cell;*/
+  border-spacing: 20px;
   width: 25%;
   float: left;
   margin: 0px 10px 30px 30px;
-  padding: 0px 5px;
   border-radius: 10px;
+  border: black 2px solid;
+
 }
 
 .posts article p:first-of-type {
   text-align: justify;
   padding: 10px;
-  border: black 2px solid;
-  border-top-width: 1px;
-  padding-bottom: 50px;
+  border-top: black 2px solid;
+  padding-bottom: 20px;
   margin-top: -20px;
 
 }
@@ -128,16 +134,15 @@ a[href*="#post"] {
   margin-bottom: -30px;
 }
 
-article p:last-of-type {
-  position: relative;
-  top: 0px;
+a[href*="#post"]:hover {
+  color: black;
+  background-color: gold;
 }
 
 .join-club {
   height: 120%;
   clear: both;
   background-color: green;
-  /*min-height: 230px;*/
 }
 
 .join-text {
@@ -162,20 +167,21 @@ article p:last-of-type {
 img#join-club-pic {
   height: 180px;
   margin: 20px;
+  /*border: black 2px solid;*/
   padding-top: 20px;
   display: block;
-  /*vertical-align: middle;*/
 }
 
 .everybody-cat {
   clear: both;
   width: 100%;
-  /*background-color: blue;*/
   height: auto;
+  color: transparent;
   background-image: url("../assets/everybody.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  margin-bottom: 100px;
 }
 
 .everybody-cat h2 {
@@ -210,5 +216,13 @@ img#join-club-pic {
 }
 
 footer {
-  margin-left: 30px;
+  padding-left: 30px;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  /*margin-left: 30px;*/
+  border-top: black 2px solid;
 }
