@@ -17,7 +17,7 @@ h1 {
     to   { opacity: 1; }
 }
 
-p, a, h3 {
+p, a, h2, h3 {
   font-family: helvetica, sans-serif;
 }
 
@@ -89,7 +89,6 @@ header h2 {
   font-size: 3em;
 }
 
-
 main section:first-child > h1 {
   clear: both;
 }
@@ -97,11 +96,12 @@ main section:first-child > h1 {
 .posts {
   display: block;
   padding-left: 10%;
-  /*display: table;*/
 }
+
 main > h2 {
   text-align: center;
 }
+
 .posts h3, .posts article p:last-of-type {
   text-align: center;
 }

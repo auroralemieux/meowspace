@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
-h1, .everybody-cat > h2 {
+h1 {
   font-family: "Josefin Sans";
 }
 
@@ -15,6 +15,11 @@ h1 {
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 p, a, h3 {
@@ -72,6 +77,8 @@ nav ul {
 
 header h2 {
   text-align: center;
+  vertical-align: middle;
+  /*display: block;*/
 }
 
 .top-banner > h1 {
@@ -99,29 +106,68 @@ main > h2 {
   text-align: center;
 }
 
-
-.everybody-cat {
-  clear: both;
-  width: 100%;
-  height: 300px;
-  color: transparent;
-  background-image: url("../assets/everybody.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-
-  margin-bottom: 100px;
+.post-name {
+  padding: 20px;
+  font-family: "Josefin Sans";
 }
 
-.everybody-cat h2 {
-  vertical-align: middle;
-  font-size: 3em;
-  color: gold;
+.post-text {
+  float: left;
+  text-align: justify;
+  width: 40%;
+  margin-left: 30px;
+}
+
+.article-text, article img {
+  padding: 10px 0px;
+}
+
+.article-text {
+  line-height: 1.25em;
+}
+
+.images {
+  margin-right: 30px;
+}
+
+.article-image, .caption {
+  float: right;
+  width: 40%;
+}
+
+.image-plus-caption img:nth-of-type(1n+2) {
+  margin-top: 50px;
+}
+
+.caption {
+  font-style: italic;
+}
+
+.images .caption {
+  margin-bottom: 10px;
   text-align: center;
-  width: 45%;
-  margin: 0 auto;
-  padding: 50px 0;
+  color: green;
+}
+
+article > section {
+  /*float: left;*/
+  display: block;
+
+}
+
+.return-to-home {
+  clear: both;
+  margin-bottom: 160px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.return-to-home a {
+  text-decoration: none;
+  border: black 2px solid;
+  color: green;
+  border-radius: 10px;
+  padding: 5px 20px;
 }
 
 .disclaimer-section {
