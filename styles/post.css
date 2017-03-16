@@ -94,97 +94,11 @@ main section:first-child > h1 {
   clear: both;
 }
 
-.posts {
-  display: block;
-  padding-left: 10%;
-  /*display: table;*/
-}
+
 main > h2 {
   text-align: center;
 }
-.posts h3, .posts article p:last-of-type {
-  text-align: center;
-}
 
-.posts h3 {
-  min-height: 2em;
-  height: auto;
-  text-align: middle;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  padding: 10px 0;
-}
-
-.posts:first-child {
-  margin: 0;
-}
-
-.posts > article {
-  /*display: table-cell;*/
-  border-spacing: 20px;
-  width: 25%;
-  float: left;
-  margin: 0px 10px 30px 30px;
-  border-radius: 10px;
-  border: black 2px solid;
-
-}
-
-.posts article p:first-of-type {
-  text-align: justify;
-  padding: 10px;
-  border-top: black 2px solid;
-  padding-bottom: 20px;
-  margin-top: -20px;
-
-}
-
-.posts article p:nth-of-type(2) > a {
-  text-decoration: none;
-  border: black 2px solid;
-  color: green;
-  border-radius: 10px;
-  padding: 5px 20px;
-  margin-bottom: -30px;
-}
-
-.posts article:nth-child(3) > a:hover {
-  color: black;
-  background-color: gold;
-}
-
-.join-club {
-  height: 120%;
-  clear: both;
-  background-color: green;
-}
-
-.join-text {
-  display: block;
-  right: 0;
-  float: left;
-  text-align: justify;
-  width: 45%;
-  padding: 0 20px 0px 30px;
-  font-size: .95em;
-  }
-
-.join-text p {
-  position: absolute;
-  width: 45%;
-}
-
-.join-text h2 {
-  text-align: center;
-}
-
-img#join-club-pic {
-  height: 180px;
-  margin: 20px;
-  /*border: black 2px solid;*/
-  padding-top: 20px;
-  display: block;
-}
 
 .everybody-cat {
   clear: both;
