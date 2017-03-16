@@ -70,6 +70,7 @@ header h2 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
   margin-top: -25px;
   padding-top: 100px;
   font-size: 3em;
@@ -175,12 +176,14 @@ img#join-club-pic {
 .everybody-cat {
   clear: both;
   width: 100%;
-  height: auto;
+  height: 300px;
   color: transparent;
   background-image: url("../assets/everybody.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
+
   margin-bottom: 100px;
 }
 
@@ -223,6 +226,5 @@ footer {
   left: 0;
   bottom: 0;
   background-color: white;
-  /*margin-left: 30px;*/
   border-top: black 2px solid;
 }
