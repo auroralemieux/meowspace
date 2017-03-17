@@ -30,14 +30,6 @@ body > header {
   top: 0px;
 }
 
-main {
-  margin-top: 100px;
-}
-
-main section:not(:last-child, :first-child) {
-  margin-left: 30px;
-}
-
 header h2, .footer h2 {
   float: left;
 }
@@ -45,9 +37,6 @@ header h2, .footer h2 {
 header a {
   padding-left: 20px;
   color: green;
-}
-
-header h2 a, nav ul li a {
   text-decoration: none;
 }
 
@@ -56,9 +45,12 @@ nav ul {
   clear: both;
   margin-right: 30px;
   vertical-align: middle;
-  margin-top: 25px;
   position: absolute;
   right: 0px;
+}
+
+header nav ul {
+  margin-top: 25px;
 }
 
 .header ul li {
@@ -70,8 +62,12 @@ nav ul {
   list-style: none;
 }
 
-header h2 {
-  text-align: center;
+main {
+  margin-top: 100px;
+}
+
+main section:not(:last-child, :first-child) {
+  margin-left: 30px;
 }
 
 .top-banner > h1 {
@@ -114,17 +110,13 @@ main > h2 {
   padding: 10px 0;
 }
 
-.posts:first-child {
-  margin: 0;
-}
-
 .posts > article {
   width: 25%;
   float: left;
   margin: 0px 10px 30px 30px;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   border: black 2px solid;
-
 }
 
 .posts article p:first-of-type {
@@ -145,7 +137,7 @@ main > h2 {
   margin-bottom: -30px;
 }
 
-.posts article:nth-child(3) > a:hover {
+.posts article p:nth-child(3) > a:hover {
   color: black;
   background-color: gold;
 }
@@ -226,15 +218,21 @@ img#join-club-pic {
 
 .footer li, .footer a {
   color: green;
+  text-decoration: none;
+
 }
 
 footer {
   padding-left: 30px;
   position: fixed;
-  height: 100px;
+  height: 75px;
   width: 100%;
   left: 0;
   bottom: 0;
   background-color: white;
   border-top: black 2px solid;
+}
+
+footer nav ul {
+  margin-top: 15px;
 }
