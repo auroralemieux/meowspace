@@ -94,7 +94,7 @@ main section:first-child > h1 {
 }
 
 .posts {
-  display: block;
+  /*display: block;*/
   padding-left: 10%;
 }
 
@@ -109,7 +109,6 @@ main > h2 {
 .posts h3 {
   min-height: 2em;
   height: auto;
-  text-align: middle;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 10px 0;
@@ -120,8 +119,6 @@ main > h2 {
 }
 
 .posts > article {
-  /*display: table-cell;*/
-  border-spacing: 20px;
   width: 25%;
   float: left;
   margin: 0px 10px 30px 30px;
